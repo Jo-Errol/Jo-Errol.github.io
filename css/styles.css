@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.majeur {
+  padding-top: 15px;
+}
+
+.standard{
+    margin-top: 10px;
+}
+.invisible {
+    display: none !important;
+}
+.visible {
+}
+
