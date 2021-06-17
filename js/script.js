@@ -27,8 +27,8 @@ function includeHTML() {
 
 function show(id) {
     var page = id + ".html";
-    if (id == "brand" || id === undefined) {
-        $("#content").load("accueil.html");
+    if (id == "brand" || id == "accueil" || id === undefined) {
+        $("#content").load("index.html");
         document.getElementById("page").innerHTML = "ACCEUIL";
     } else {
         $("#content").load(page);
