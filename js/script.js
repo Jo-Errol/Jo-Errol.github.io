@@ -27,14 +27,13 @@ function includeHTML() {
     }
 }
 
-function display(id) {
-    var page = '';
+function display() {
+    let page = '';
 
     if (document.cookie === '') {
         page = "accueil.html";
     } else {
-        const {substr} = document.cookie;
-        page = substr(5);
+        page = document.cookie.substr(5);
     }
 
     document.cookie = "page=" + page + "; SameSite=Lax";
@@ -46,7 +45,7 @@ function show(id) {
     if (id == "brand") {
         id = "accueil";
     }
-    var page = id + ".html";
+    let page = id + ".html";
 
     $("#content").load(page);
     document.cookie = "page=" + page + "; SameSite=Lax";
@@ -60,10 +59,10 @@ function show(id) {
 
 
 function displayNOK(elem) {
-    var cartes = document.getElementsByClassName("col");
-    var newElement = elem + "Details";
-    var element = document.getElementById(newElement);
-    var goBack = document.getElementById("goBack");
+    let cartes = document.getElementsByClassName("col");
+    let newElement = elem + "Details";
+    let element = document.getElementById(newElement);
+    let goBack = document.getElementById("goBack");
 
     for (var i = 0; i < cartes.length; i++) {
         cartes[i].classList.remove("visible");
@@ -87,9 +86,9 @@ function displayNOK(elem) {
 }
 
 function displayOK() {
-    var element = document.getElementsByClassName("visible")[0];
-    var goBack = document.getElementById("goBack");
-    var cartes = document.getElementsByClassName("col");
+    let element = document.getElementsByClassName("visible")[0];
+    let goBack = document.getElementById("goBack");
+    let cartes = document.getElementsByClassName("col");
 
     element.classList.remove("visible");
     element.classList.add("invisible");
