@@ -9,11 +9,11 @@ function includeHTML() {
         if (file) {
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) {
+                if (4 === this.readyState) {
+                    if (200 === this.status) {
                         elem.innerHTML = this.responseText;
                     }
-                    if (this.status == 404) {
+                    if (404 === this.status) {
                         elem.innerHTML = "Page not found.";
                     }
                     elem.removeAttribute("includes");
@@ -30,10 +30,11 @@ function includeHTML() {
 function display(id) {
     var page = '';
 
-    if (document.cookie == '') {
+    if (document.cookie === '') {
         page = "accueil.html";
     } else {
-        page = document.cookie.substr(5);
+        const {substr} = document.cookie;
+        page = substr(5);
     }
 
     document.cookie = "page=" + page + "; SameSite=Lax";
@@ -74,7 +75,6 @@ function displayNOK(elem) {
     element.classList.remove("invisible");
     element.classList.add("visible");
 
-    var delayInMilliseconds = 250;
     setTimeout(function () {
         window.scrollTo(0, 0);
     }, 250);
