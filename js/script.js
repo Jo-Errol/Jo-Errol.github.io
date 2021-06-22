@@ -25,18 +25,37 @@ function includeHTML() {
     }
 }
 
-function show(id) {
-    var page = id + ".html";
-    if (id == "brand" || id === undefined) {
-        $("#content").load("accueil.html");
-        document.getElementById("page").innerHTML = "ACCEUIL";
+function display(id) {
+    var page = '';
+    console.log(document.cookie);
+    if (document.cookie == ''){
+        page = "accueil.html";
     } else {
-        $("#content").load(page);
-        document.getElementById("page").innerHTML = id.toUpperCase();
+        page = document.cookie.substr(5);
     }
-    if (document.getElementById("navbarText").classList[2] == "show") {
+    document.cookie = "page=" + page + "; SameSite=Lax";
+    $("#content").load(page);
+    console.log(document.cookie);
+}
+
+function show(id) {
+    console.log(document.cookie);
+
+    if (id == "brand"){
+        id = "accueil";
+    }
+    var page = id + ".html";
+
+    $("#content").load(page);
+    document.cookie = "page=" + page + "; SameSite=Lax";
+    document.getElementById("page").innerHTML = id.toUpperCase();
+    document.getElementById("navbarText").classList.remove("show");
+
+    /*if (document.getElementById("navbarText").classList[2] == "show") {
         document.getElementById("navbarText").classList.remove("show");
-    }
+    }*/
+
+    console.log(document.cookie);
 }
 
 
