@@ -28,16 +28,17 @@ function includeHTML() {
 }
 
 function display() {
-    let page = '';
+    var page = '';
 
     if (document.cookie === '') {
         page = "accueil.html";
     } else {
         page = document.cookie.substr(5);
     }
-
-    document.cookie = "page=" + page + "; SameSite=Lax";
     $("#content").load(page);
+
+    sideDish("page", page);
+    upto();
 }
 
 function show(id) {
@@ -48,15 +49,35 @@ function show(id) {
     let page = id + ".html";
 
     $("#content").load(page);
-    document.cookie = "page=" + page + "; SameSite=Lax";
-    document.getElementById("page").innerHTML = id.toUpperCase();
-    document.getElementById("navbarText").classList.remove("show");
 
-    /*if (document.getElementById("navbarText").classList[2] == "show") {
-        document.getElementById("navbarText").classList.remove("show");
-    }*/
+    sideDish("page", page);
+
+    upto();
 }
 
+function initCookies(){
+    document.cookie = "page=; SameSite=Lax";
+    document.cookie = "competence=; SameSite=Lax";
+    document.cookie = "projet=; SameSite=Lax";
+}
+
+function sideDish(elem, value){
+    if (document.cookie === ''){
+        initCookies();
+    }
+    if (elem === 'page'){
+        document.cookie = "page=" + value + "; SameSite=Lax";
+        let n = value.indexOf(".");
+        let id = value.substr(0, n);
+        document.getElementById("page").innerHTML = id.toUpperCase();
+        document.getElementById("navbarText").classList.remove("show");
+    } else if (elem === 'competence'){
+        document.cookie = "competence=" + value + "; SameSite=Lax";
+    } else if (elem === 'projet'){
+        document.cookie = "projet=" + value + "; SameSite=Lax";
+    }
+
+}
 
 function displayNOK(elem) {
     let cartes = document.getElementsByClassName("col");
@@ -74,6 +95,10 @@ function displayNOK(elem) {
     element.classList.remove("invisible");
     element.classList.add("visible");
 
+    upto();
+}
+
+function upto(){
     setTimeout(function () {
         window.scrollTo(0, 0);
     }, 250);
@@ -98,5 +123,19 @@ function displayOK() {
     for (var j = 0; j < cartes.length; j++) {
         cartes[j].classList.remove("invisible");
         cartes[j].classList.add("visible");
+    }
+    document.cookie = "competence=; SameSite=Lax";
+    document.cookie = "projet=; SameSite=Lax";
+}
+
+function mig(text){
+    text = text.toLowerCase();
+    text = text.replaceAll("é", "e");
+    if (text == "bateau" || text == "petrole" || text == "festival" || text == "telephone" || text == "chateau"  || text == "chimie"){
+        sideDish('projet', text);
+        show("projets");
+    } else {
+        sideDish('competence', text);
+        show("competences");
     }
 }
