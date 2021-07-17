@@ -33,7 +33,7 @@ function display() {
     if (document.cookie === '') {
         page = "accueil.html";
     } else {
-        page = document.cookie.substr(5);
+        page = document.cookie.substr(document.cookie.indexOf("page=") + 5);
     }
     $("#content").load(page);
 
@@ -55,25 +55,25 @@ function show(id) {
     upto();
 }
 
-function initCookies(){
+function initCookies() {
     document.cookie = "page=; SameSite=Lax";
     document.cookie = "competence=; SameSite=Lax";
     document.cookie = "projet=; SameSite=Lax";
 }
 
-function sideDish(elem, value){
-    if (document.cookie === ''){
+function sideDish(elem, value) {
+    if (document.cookie === '') {
         initCookies();
     }
-    if (elem === 'page'){
+    if (elem === 'page') {
         document.cookie = "page=" + value + "; SameSite=Lax";
         let n = value.indexOf(".");
         let id = value.substr(0, n);
         document.getElementById("page").innerHTML = id.toUpperCase();
         document.getElementById("navbarText").classList.remove("show");
-    } else if (elem === 'competence'){
+    } else if (elem === 'competence') {
         document.cookie = "competence=" + value + "; SameSite=Lax";
-    } else if (elem === 'projet'){
+    } else if (elem === 'projet') {
         document.cookie = "projet=" + value + "; SameSite=Lax";
     }
 
@@ -98,7 +98,7 @@ function displayNOK(elem) {
     upto();
 }
 
-function upto(){
+function upto() {
     setTimeout(function () {
         window.scrollTo(0, 0);
     }, 250);
@@ -128,10 +128,10 @@ function displayOK() {
     document.cookie = "projet=; SameSite=Lax";
 }
 
-function mig(text){
+function mig(text) {
     text = text.toLowerCase();
     text = text.replaceAll("é", "e");
-    if (text == "bateau" || text == "petrole" || text == "festival" || text == "telephone" || text == "chateau"  || text == "chimie"){
+    if (text == "bateau" || text == "petrole" || text == "festival" || text == "telephone" || text == "chateau" || text == "chimie") {
         sideDish('projet', text);
         show("projets");
     } else {
