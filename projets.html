@@ -65,7 +65,7 @@
             </div>
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
-                    <img alt="amage de la base nautique du grand large"
+                    <img alt="image de la base nautique du grand large"
                          class="rounded mx-auto d-block standard img-fluid"
                          src="./docs/projets/base.jpg">
                     <div class="card-body text-secondary">
@@ -73,6 +73,36 @@
                         <p class="card-text">Réalisation en cours de formation permettant de réaliser tout le processus
                             d'un site web</p>
                         <a class="btn btn-success" id="base" onclick="displayNOK(this.id)">Aller au projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Compétences :</small>
+                    </div>
+                </div>
+            </div>
+            <div class="visible col">
+                <div class="card card border-secondary mb-3">
+                    <img alt="amage de la base nautique du grand large"
+                         class="rounded mx-auto d-block standard img-fluid"
+                         src="./docs/projets/antenne.jpg">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Le projet Telephone</h5>
+                        <p class="card-text">Projet professionnel</p>
+                        <a class="btn btn-success" id="telephone" onclick="displayNOK(this.id)">Aller au projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Compétences :</small>
+                    </div>
+                </div>
+            </div>
+            <div class="visible col">
+                <div class="card card border-secondary mb-3">
+                    <img alt="amage de la base nautique du grand large"
+                         class="rounded mx-auto d-block standard img-fluid"
+                         src="./docs/projets/chemistry.png">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Le projet Chimie</h5>
+                        <p class="card-text">Projet professionnel</p>
+                        <a class="btn btn-success" id="chimie" onclick="displayNOK(this.id)">Aller au projet</a>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Compétences :</small>
@@ -322,14 +352,15 @@
                             avec les activités nautiques. Cette seconde action a pour but de déterminer ce qui existe
                             déjà et obtenir des idées sur notre propre réalisation. Avec cette étape, je cherchais à
                             répondre à la question: " Existe-t-il des constantes sur ce type de site ?". Après ces
-                            étapes préliminaires, nous avons réalisé un exemple de zoning pour le site en construction.</p>
+                            étapes préliminaires, nous avons réalisé un exemple de zoning pour le site en
+                            construction.</p>
                         <p>Dans un deuxième temps, j'ai réalisé une maquette sur le logiciel Adobe XD. J'ai ainsi
                             schématisé mes différentes pages, réalisé mes icônes et mes logos. Ensuite, j'ai animé
                             l'ensemble de la maquette avec les animations d'Adobe, ce qui m'a permis d'obtenir un
                             prototype fonctionnel du site web.</p>
                         <p>La seconde part de ce projet est la réalisation.
                             <br>
-                        Avec Loïc, nous avons decidé de réaliser une hybridation de sa maquette et de la mienne en
+                            Avec Loïc, nous avons decidé de réaliser une hybridation de sa maquette et de la mienne en
                             essayant de garder le meilleur des deux. Nous avons travaillé en HTML, CSS (framework
                             bootstrap) et JavaScript. Afin de travailler en collaboration, nous avons utilisé git
                             (Github) pour versionner le projet.</p>
@@ -346,7 +377,152 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Compétences : Maquettage, Développement, Veille concurentielle, Git.</small>
+                    <small class="text-muted">Compétences : Maquettage, Développement, Veille concurentielle,
+                        Git.</small>
+                </div>
+            </div>
+            <div class="invisible card" id="chimieDetails">
+                <div class="card-header">
+                    Projet Chimie
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">La relation client, un élément important du travail. </h5>
+                    <div class="card-text">
+                        <h1>Le contexte</h1>
+                        <p>Il s'agit ici d'un projet dans le cadre professionnel.
+                            </br>Nous devions procéder à la migration logicielle et de données d'un Maximo en fin de
+                            support
+                            vers une version 7.6.1.2 dans laquelle nous devions intégrer le module scheduller (la
+                            premiere installation en Françe).</p>
+                        <h1>L'équipe projet</h1>
+                        <p>Coté SQLI, nous étions trois : un chef de projet, un expert technique en support et moi en
+                            tant qu'intégrateur.</br>
+                            Coté client, il y avait le porteur de projet, ainsi que de manière ponctuelle un membre de
+                            l'IT.</p>
+                        <h1>Le projet</h1>
+                        <p>Dans le cadre de la fin de garantie de leur logiciel et de l'augmentation de leur besoin,
+                            l'entreprise Chimie a fait appel à nous afin de conduire l'installation d'une nouvelle
+                            version de Maximo, le transfert des données et l'installation d'un module complémentaire
+                            (scheduller).</p>
+                        <p>J'ai été positionné sur ce projet en tant qu'intégrateur sous la tutelle d'un expert
+                            technique. Sous sa direction, je devais procéder à plusieurs séries d'installations.</p>
+                        <p>J'ai commencé par me procurer la documentation technique relative à l'installation d'un
+                            Maximo Asset Management 7.6.1.2 et d'un Scheduller, tandis que le client nous fournissait un
+                            Dump de sa base de données en Oracle. Une fois les besoins matériels déterminés, j'ai fait
+                            une demande à notre IT, afin d'obtenir la machine virtuelle. Dans le cours laps de temps
+                            nécessaire à la création de l'environnement, je me suis procuré les logiciels
+                            d'installation,
+                            auprès d'IBM et d'Oracle, des versions sources et cibles.</p>
+                        <p>À la réception de la VM, j'ai transféré les logiciels d'installation et le dump client puis
+                            procédé à un snapshot de l'environnement vide. En effet, Maximo nécessite un environnement
+                            parfaitement vierge pour être installé ; en cas de désinstallation, il est courant qu'une
+                            nouvelle installation rencontre des problèmes. </br>
+                            Une fois cette étape préliminaire réalisée, en me basant sur la procédure d'installation
+                            officielle, j'ai effectué une installation Maximo iso prod. J'ai ensuite réalisé une
+                            nouvelle sauvegarde de l'environnement. À partir des comptes-rendus d'intervention déjà
+                            réalisés par mon entreprise et avec l'assistance ponctuelle de l'expert technique, j'ai
+                            opéré la migration logicielle et de données. À partir de cette étape, j'ai consigné mes
+                            manipulations afin de rédiger une procédure. Après validation par mon référent technique,
+                            nous avons soumis la procédure à notre client. Cela a permis au client de valider la
+                            procédure et de la planifier. En effet, elle nécessitait un arrêt logiciel sur le site de
+                            production et la mise en place d'une nouvelle infrastructure.</p>
+                        <p>Après plusieurs échanges, afin de répondre aux interrogations de notre client, nous avons
+                            procédé en janvier à un déplacement sur site afin de procéder à la manipulation. Celle-ci a
+                            eu lieu en 3 temps. Une installation test, qui s'est déroulé sans accroc et a permis
+                            d'affiner le planning d'installation. Une installation-migration en production prévue sur
+                            3 jours. </br>
+                            Suite à des problèmes de droits sur le serveur de base de données, celle-ci a échoué. Au
+                            bout d'un jour et demi de manipulations et d'installation infructueuses, nous avons tout
+                            stoppé et organisé une réunion qui devait nous permettre d'évaluer nos options et de
+                            planifier soit :
+                        <ul>
+                            <li>une restauration et une remise en route du système en production</li>
+                            <li>soit trouvé une solution alternative</li>
+                        </ul>
+                        Nous avons évalué les différents risques et considérant que nous disposions d'une solution de
+                        dernier recours, la restauration de l'environnement et le report de la migration, il a été
+                        décidé de changer nos plans.</br>
+                        Bénéficiant toujours d'une machine aux bonnes configurations matérielles, nous avons opté pour
+                        une nouvelle installation dans laquelle nous avons incorporé les données de prod. Dans le même
+                        temps assisté par mon référent, ici le chef de projet qui était chargé de m'encadrer sur site,
+                        nous avons donc procédé a l'installation et la rédaction du compte-rendu d'intervention. Les
+                        différentes étapes préliminaires (test des procédures en interne, installation test chez le
+                        client, échec de la migration) nous ont permis d'avoir une maîtrise plus précise des procédures
+                        et du temps. Nous avons réussi à tenir les délais afin de fournir une installation stable et
+                        conforme aux attentes de notre client.</p>
+                        <p>Suite à cette installation, le client à procédé aux tests de l'environnement. J'ai corrigé
+                            les quelques erreurs et disfonctionnements et nous avons ainsi pu conclure notre
+                            intervention avec la signature du procès-verbal attestant de la réception et l'acceptation
+                            de notre installation par le client.</p>
+                        <p>La dernière étape de ce projet a été le suivi post intervention. Notre client avait souhaité
+                            installé un module supplémentaire, le scheduller. Nous l'avons ensuite accompagné afin de
+                            résoudre des problèmes de lenteurs. Pour ce faire, en collaboration avec IBM Françe, nous
+                            avons installé une série de fixs afin de permettre un usage optimal de ce logiciel de
+                            planification des tâches.</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Compétences : </small>
+                </div>
+            </div>
+            <div class="invisible card" id="telephoneDetails">
+                <div class="card-header">
+                    Projet Telephone
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">On n'arrete jamais d'apprendre</h5>
+                    <div class="card-text">
+                        <h1>Le contexte</h1>
+
+                        <p>Il s'agit encore ici d'un projet dans le cadre professionnel.</p>
+
+                        <p>Un opérateur de téléphonie et d'Internet a décidé d'intégrer dans Maximo son processus
+                            d'installation du réseau chez ses clients.</p>
+
+                        <h1>L'équipe projet</h1>
+
+                        <ul>
+                            <li>1 chef de projet-consultant,</li>
+                            <li>3 développeurs,</li>
+                            <li>1 consultante technique</li>
+                        </ul>
+
+                        <h1>Le projet</h1>
+
+                        <p>Un client aillant déjà plusieurs projet chez nous, nous a de nouveau sollicité afin que nous
+                            configurions son environnement de telle sorte qu'il puisse gérer les interventions chez des
+                            particuliers dans Maximo.</p>
+
+                        <p>Pour rendre cela possible, il a fallu schématiser le processus de contractualisation et
+                            d'intervention entre l'entreprise et son client.</p>
+
+                        <p>Je suis arrivé sur le projet plus tardivement, lorsqu'il a fallu convertir ce schéma en
+                            workflow. Le workflow dans Maximo est un ensemble de règles qui vont déterminer et
+                            restreindre, sur une intervention, les actions réalisables. Les critères sont aussi divers
+                            que le statut de l'intervention, la présence de pièces jointes, le statut de ces pièces ou
+                            encore la personne accédant à l'intervention.</p>
+
+                        <p>Dans le cadre de ce projet, malgré 2 ans d'expériences sur ce logiciel, j'ai de nouveau dû
+                            prendre mes papiers et mes crayons, afin de suivre une formation sur la création des
+                            workflows.</p>
+
+                        <p>Mon action sur ce projet se résume en deux étapes. Premièrement, à partir du schéma de
+                            relation client, élaborer la trame du workflow. Cette trame doit comporter les différents
+                            acteurs, les conditions de passage d'un statut a un autre, les options des boites de
+                            dialogues,...</p>
+
+                        <p>Deuxièmement, à partir de cette trame validée par le chef de projet et/ou la consultante
+                            créer le workflow correspondant dans Maximo grâce à l'outil de Gestion des flux de Tavaux.
+                            Une fois ce flux de travail créé, je devais le test puis vérifier qu'il s'intégrait bien
+                            avec les workflow précédents et suivants.</p>
+
+                        <p>Pour des raisons de staffing, mon intervention sur ce projet a été rapide, seulement quelques
+                            jours. Cependant, il m'a permis d'aborder des aspects nouveaux de mon travail d'intégrateur
+                            Maximo.</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Compétences : </small>
                 </div>
             </div>
 
