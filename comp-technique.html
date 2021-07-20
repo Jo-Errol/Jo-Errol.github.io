@@ -102,13 +102,13 @@
             base d’un dossier de recette et se termine par un procès-verbal de recette qui formalise l'acceptation du
             client ». [2, DRECQ Vincent].
             In Drifa Kesraoui. <em>Test et recette dans un projet logiciel : évolution des méthodes et outils.
-            </em> consultable dans son intégralité <a href=" https://memsic.ccsd.cnrs.fr/mem_01128924/document">ici</a>.</p>
+            </em> consultable dans son intégralité <a class="lien" href=" https://memsic.ccsd.cnrs.fr/mem_01128924/document">ici</a>.</p>
 
 
         <h1>Mise en contexte</h1>
           <p>Je vais aborder la mise en pratique de la <strong>conception de base de données</strong> à travers une
-            méthode en 4 points (consultable <a href="https://www.base-de-donnees.com/concevoir-base-donnees/">ici</a>)
-            appliqué à une situation du projet <a href="proj-bateau.html">Bâteau</a>.</p>
+            méthode en 4 points (consultable <a class="lien" href="https://www.base-de-donnees.com/concevoir-base-donnees/">ici</a>)
+            appliqué à une situation du projet <a class="lien" href="proj-bateau.html">Bâteau</a>.</p>
           <ol start="1">
             <li>-Le besoin n'existe-t-il pas déjà ailleurs ? Rien ne sert de réinventer la roue
             </li>
@@ -158,7 +158,7 @@
             dans les cas les plus drastiques être un obstacle au fonctionnement de l'application.</p>
 
           <p>Je vais aborder le <strong>maquetage</strong> et prototypage avec le projet
-            <a href="proj-base.html">Base nautique</a>.</p>
+            <a class="lien" href="proj-base.html">Base nautique</a>.</p>
           <p>Dans le cadre d'une unité d'enseignement, ma classe a été amener à produire la maquette et le prototype
             pour la refonte du site web de la base nautique du Grand Large à Meyzieu.</p>
           <p>Après une formation théorique et pratique sur les techniques du maquettage et du prototypage d'un site web
@@ -181,10 +181,57 @@
           <p>A la fin de ce projet nous avons chacun présenté nos travaux. Si l'agencement de mon site et ses animations
             n'ont rien eu à envier aux travaux de mes camarades, je dois reconnaitre que mes qualités de designer
             laissent à désirer. Je reconnait mon incapacité à produire un ensemble esthétique correcte. Comme je mitige
-            la notion d'autonomie dans la compétence sur le <a href="comp-travailler.html">travail</a> e=je sais
+            la notion d'autonomie dans la compétence sur le <a class="lien" href="comp-travailler.html">travail</a> je sais
             reconnaitre que pour ce genre de tâche je dois collaborer avec des gens dont c'est le corps de métier,
             les Designers UX/UI.</p>
 
+          <p>Je vais aborder <string>Git et le versionnage</strong> au travers du projet <a class="lien" href="proj-base.html">Base Nautique</a>
+            où j'étais en charge de la gestion du repository de sa création à la livraison finale, même si j'utilise git
+            au quotidien dans le cadre professionnel.</p>
+          <p>Afin de pouvoir travailler en groupe sur la réalisation d'un site pour la base nautique Le grand Large à
+            Meyzieu, j'ai mis en place un repository. J'ai donc initialiser un projet via mon Editeur (webStorm) puis
+            j'ai initier le repository. J'ai ensuite réalisé mon commit avec mes fichiers initiaux. Apres avoir push ces
+            documents sur Master, j'ai initier une branche Dev, à partir de laquelle nous avons créé les branches
+            nécessaire à chacune des étapes. Une fois chaque réalisations poussées sur sa branche respective, nous
+            effectuions une merge request (via la page web de git) en direction de Dev. Je gérais alors la demande de
+            merge en traitant les éventuels conflits. <br>
+            Avant de tirer une nouvelle branche nous avons veillé à effectuer les pull nécessaire à la mise à jour du projet.</p>
+          <p>Lorsque nous avons terminé l'ensemble des développements, j'ai fusionné la branche DEV et la branche Master.
+            En raison d'une maladresse de ma part, lors de la gestion des conflits j'ai perdu l'ensemble de nos
+            développements. J'ai alors récupéré l'ensemble de notre travail en consultant une version antérieure du
+            projet. Cette expérience me permet d'affirmer qu'en l'absence d'une bonne maitrise de git et son
+            fonctionnement, une merge sur Master doit toujours être faite calmement….</p>
+
+          <p>Je vais aborder le <strong>développement ou code</strong> au travers du projet <a class="lien" href="proj-petrole.html">Pétrole</a>
+            et du projet <a class="lien" href="proj-bus.html">Bus</a>.</p>
+          <p>En tant que développeur sur le projet <a class="lien" href="proj-petrole.html">Pétrole</a> je suis en charge de l'analyse des bugs,
+            de leurs résolutions et du développement de solutions logicielles spécifiques. A ce titre je suis amené à
+            travailler essentiellement en Java J2EE, langage dans lequel est développé la GMAO Maximo.<br>
+            Ce travail de développement s'opère en plusieurs temps. Je commence par étudier le ticket, pour vérifier sa
+            qualification (bug ou évolution) et je propose une estimation du temps de réalisation. Dans un second temps,
+            je peux, en cas de doute discuter de la solution envisagé avec mon collègue sur ce projet.
+            Ces solutions peuvent être un ajout de lignes, la création de méthode, ou la rédaction d'une nouvelle classe.<br>
+            Je passe ensuite au développement de la solution sur une branche dédiée au ticket en cours. Enfin, après
+            avoir push j'effectue une merge request. Mon collègue, en charge de cette manipulation, va alors faire une
+            relecture de mon code et me soumettre ses remarques afin que je fasse des corrections si nécessaires.
+            S'enchaine ensuite les différentes étapes de test interne puis externe.</p>
+          <p>Dans le cadre du projet <a class="lien" href="proj-bus.html">bus</a> (configuration d'un environnement Maximo avec
+            l'adaptation de l'apparence dans le cadre d'une avant-vente) j'ai eu à travailler, en collaboration avec le
+            service UI/UX, sur des feuilles JSP, et CSS. L'objectif était de personnalisé l'apparence de Maximo en un
+            minimum de temps et de changement (pour des raisons de compatibilité en cas de migration). Cela c'est
+            caractérisé par l'ajout d'image de fond, l'ajout d'effet en cas de survol sur un bouton et l'ajout des
+            couleurs spécifiques à l'entreprise, dans les menus, les polices et les boutons.</p>
+          <p>Malgré mon sens de l'esthétique assez personnel, cette partie de mon travail est celle que je préfère.
+            En effet, elle me permet de rendre les fonctionnalités que je développe en Java agréable à l'usage du client
+          final : l'utilisateur. De plus, en portant un regard critique sur ma pratique du développement, il apparait
+            que je manque constamment l'etape des tests unitaires dans le developpement de code Java. Pour tenter de
+            justifier ce manquement, je me cache derrière l'idée que personne ne le pratique sur ce projet, excuse
+            falacieuse car en tant que developpeur principal, sa mise en place est de ma responsabilité. </p>
+
+          <p>Je vais aborder la pratique du language <strong>SQL</strong> au travers du projet <a href="proj-petrole.html">Pétrole</a>.
+            Même si encore une fois, c'est une compétence que je sollicite régulièrement sur l'ensemble de mes projets
+            comme par exemple <a href="proj-chimie.html">Chimie</a> avec la migration de base de données . </p>
+          <p>Maximo, dans son articulation</p>
 
 
 
