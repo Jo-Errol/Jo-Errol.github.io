@@ -10,20 +10,27 @@
     text-align: center;
 }
 
-li{
+li {
     list-style: none;
 }
 
 .majeur {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
-.standard{
+.standard {
     margin-top: 10px;
 }
+
 .invisible {
     display: none !important;
 }
+
 .visible {
 }
 
+.lien {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c3034;
+}

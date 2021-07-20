@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <!--<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">-->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" rel="stylesheet">
+
+    Set-Cookie: page=accueil.html; SameSite=None;
+
+    <link href="./docs/iconesite.jpg" rel="icon">
+    <title>Mastère EIL 2021; PROJETS</title>
+</head>
+<body>
+
+<div includes="navbar.html"></div>
 <!--Div principale-->
 <div class="p-5 mb-4 bg-light rounded-3">
     <div class="container-fluid py-5">
@@ -11,42 +34,45 @@
                         <h5 class="card-title">Le projet Chateau</h5>
                         <p class="card-text">Projet issu de mes experiences professionnelles antérieures à la
                             formation.</p>
-                        <a class="btn btn-success" id="chateau" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <a class="btn btn-success" id="chateau" href="proj-chateau.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
+                        <small class="text-muted">Compétences : Gestion de projet, Gestion d'équipe, gestion financière, communication.</small>
                     </div>
                 </div>
             </div>
+
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
                     <img alt="Photo aérienne d'une raffinerie." class="rounded mx-auto d-block standard img-fluid"
                          src="./docs/projets/raffinerie.png">
                     <div class="card-body text-secondary">
-                        <h5 class="card-title">Le projet pétrole</h5>
-                        <p class="card-text">Projet issu de mes experiences vecues durant la formation.</p>
-                        <a class="btn btn-success" id="petrole" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <h5 class="card-title">Le projet Pétrole</h5>
+                        <p class="card-text">Projet issu de mes expériences vécues durant la formation.</p>
+                        <a class="btn btn-success" id="petrole" href="proj-petrole.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
+                        <small class="text-muted">Compétences : Développement, Relation Client, Communication</small>
                     </div>
                 </div>
             </div>
+
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
                     <img alt="photo d'un ferries de la compagnie Brittany Ferries."
                          class="rounded mx-auto d-block standard img-fluid"
                          src="./docs/projets/bateau.png">
                     <div class="card-body text-secondary">
-                        <h5 class="card-title">Le projet Bateau</h5>
-                        <p class="card-text">Projet issu de mes experiences vecues durant la formation.</p>
-                        <a class="btn btn-success" id="bateau" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <h5 class="card-title">Le projet Bâteau</h5>
+                        <p class="card-text">Projet issu de mes expériences vécues durant la formation.</p>
+                        <a class="btn btn-success" id="bateau" href="proj-bateau.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
+                        <small class="text-muted">Compétences : Gestion de projet, Gestion d'équipe, conception de base de données</small>
                     </div>
                 </div>
             </div>
+
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
                     <img alt="Affiche du Festival de la Bouloie édition 2016."
@@ -56,44 +82,32 @@
                         <h5 class="card-title">Le projet Festival</h5>
                         <p class="card-text">Projet issu de mes experiences professionnelles antérieures à la
                             formation.</p>
-                        <a class="btn btn-success" id="festival" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <a class="btn btn-success" id="festival" href="proj-festival.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
+                        <small class="text-muted">Compétences : Gestion de projet, Gestion d'équipe, gestion financière, communication</small>
                     </div>
                 </div>
             </div>
+
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
-                    <img alt="image de la base nautique du grand large"
+                    <img alt="image de la base nautique du grand large issu du site https://www.google.com/url?sa=i&url=https%3A%2F%2Fville-data.com%2Fbase-nautique%2FMeyzieu-69-69282&psig=AOvVaw26py3t7t-pIO-WQcWpMkXO&ust=1626824655792000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCND8uJ-o8PECFQAAAAAdAAAAABAE"
                          class="rounded mx-auto d-block standard img-fluid"
-                         src="./docs/projets/base.jpg">
+                         src="./docs/projets/base2.jpg">
                     <div class="card-body text-secondary">
                         <h5 class="card-title">Le projet Base nautique</h5>
                         <p class="card-text">Réalisation en cours de formation permettant de réaliser tout le processus
                             d'un site web</p>
-                        <a class="btn btn-success" id="base" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <a class="btn btn-success" id="base" href="proj-base.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
+                        <small class="text-muted">Compétences : Maquettage, Développement, Veille concurentielle,
+                            Git.</small>
                     </div>
                 </div>
             </div>
-            <div class="visible col">
-                <div class="card card border-secondary mb-3">
-                    <img alt="amage de la base nautique du grand large"
-                         class="rounded mx-auto d-block standard img-fluid"
-                         src="./docs/projets/antenne.jpg">
-                    <div class="card-body text-secondary">
-                        <h5 class="card-title">Le projet Telephone</h5>
-                        <p class="card-text">Projet professionnel</p>
-                        <a class="btn btn-success" id="telephone" onclick="displayNOK(this.id)">Aller au projet</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Compétences :</small>
-                    </div>
-                </div>
-            </div>
+
             <div class="visible col">
                 <div class="card card border-secondary mb-3">
                     <img alt="amage de la base nautique du grand large"
@@ -102,17 +116,34 @@
                     <div class="card-body text-secondary">
                         <h5 class="card-title">Le projet Chimie</h5>
                         <p class="card-text">Projet professionnel</p>
-                        <a class="btn btn-success" id="chimie" onclick="displayNOK(this.id)">Aller au projet</a>
+                        <a class="btn btn-success" id="chimie" href="proj-chimie.html">Aller au projet</a>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Compétences :</small>
                     </div>
                 </div>
             </div>
+
+            <div class="visible col">
+                <div class="card card border-secondary mb-3">
+                    <img alt="image d'une tour d'antenne téléphonique"
+                         class="rounded mx-auto d-block standard img-fluid"
+                         src="./docs/projets/antenne.jpg">
+                    <div class="card-body text-secondary">
+                        <h5 class="card-title">Le projet Téléphone</h5>
+                        <p class="card-text">Projet professionnel</p>
+                        <a class="btn btn-success" id="telephone" href="proj-telephone.html">Aller au projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Compétences :</small>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!--Détails des projets-->
-        <div class="row">
+        <!--Détails des projets
+        <!--<div class="row">
             <div class="invisible card" id="chateauDetails">
                 <div class="card-header">
                     Projet Château
@@ -121,14 +152,14 @@
                     <h5 class="card-title">La réussite dans la diversité. En avant l'Histoire.</h5>
                     <div class="card-text">
                         <h1>Le contexte</h1>
-                        <p>Le projet Chateau s'inscrit dans le cadre d'une activité de bénévolat.</p>
+                        <p>Le projet Château s'inscrit dans le cadre d'une activité de bénévolat.</p>
                         <p>L'association Concordia (<a href="https://www.concordia.fr/">ici</a>) organise des échanges
-                            internationaux, autour de projets culturels, visant a promouvoir l'entre aide et la
+                            internationaux, autour de projets culturels, visant à promouvoir l'entraide et la
                             tolérance
                             entre les peuples.</p>
                         <p>Le projet, pour l'année 2016 consistait à nettoyer et restaurer deux murs parallèles dans
-                            l'ancienne enceinte du fort de Chelles ainsi qu'a faire la promotion du patrimoine culturel
-                            ainsi préservé et de l'action de Concordia dans le cadre de ce chantier. Cette action était
+                            l'ancienne enceinte du fort de Chelles et promouvoir l'action de Concordia dans le cadre de
+                            ce chantier et le patrimoine culturel préservé par le chantier. Cette action était
                             réalisée en partenariat avec la mairie de Chelles, notamment chargée de l'approvisionnement
                             logistique et matériel. Par ailleurs, la mairie fournissait un lieu de résidence ainsi qu'un
                             mode de transport pour la durée du séjour.</p>
@@ -140,13 +171,12 @@
                                 de la médiation et du budget.
                             </li>
                             <li>12 bénévoles internationaux (3 espagnoles, 2 polonaises, 2 turques, 2 coréennes, 1
-                                russes
-                                et 2 françaises)
+                                russe et 2 françaises)
                             </li>
                         </ul>
                         <br>
                         <h1>Le projet</h1>
-                        <p>En tant qu'animateur vie de groupe j'étais chargé de l'encadrement des volontaires
+                        <p>En tant qu'animateur vie de groupe, j'étais chargé de l'encadrement des volontaires
                             internationaux,
                             de la gestion du budget, de la mise en place d'animations et de temps de réflexion autour du
                             patrimoine, médiation auprès du public local (travail sur la mémoire et le patrimoine,
@@ -154,56 +184,50 @@
                             d'information jeunesse, les élus locaux, etc.).</p>
                         <p>Dans les faits, j'étais chargé d'orchestrer la vie des bénévoles sur le camp et d'articuler
                             les temps de travail et ceux de loisirs, dans le cadre des engagements projet et de
-                            l'enveloppe
-                            budgétaire allouée au séjour. J'étais par ailleurs , l'interlocuteur tant de l'association
-                            que des collectivités conjointement partie prenante sur le chantier international.</p>
-                        <br>
-                        <h1>Compétences</h1>
-                        <p>Gestion de projet, Gestion d'équipe, gestion financière, communication.</p>
+                            l'enveloppe budgétaire allouée au séjour. J'étais par ailleurs , l'interlocuteur tant de l'association
+                            que des collectivités conjointement parties prenantes sur le chantier international.</p>
+
                     </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Compétences : Gestion de projet, Gestion d'équipe, gestion financière, communication.</small>
                 </div>
             </div>
 
             <div class="invisible card" id="bateauDetails">
                 <div class="card-header">
-                    Projet Bateau
+                    Projet Bâteau
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Maintenance au long court</h5>
+                    <h5 class="card-title">Maintenance au long cours</h5>
                     <div class="card-text">
                         <h1>Le contexte</h1>
-                        <p>Le projet Bateau s'inscrit dans le cadre d'un contrat de TMA en régis, sur le logiciel
+                        <p>Le projet Bâteau s'inscrit dans le cadre d'un contrat de TMA en régie, sur le logiciel
                             Maximo, pour une entreprise de transport maritime de fret et de personnes.</p>
                         <p>Plus précisément, il s'agit d'une TMA (Tiers Maintenance Applicative) Maximo Corrective et
-                            évolutive. Sur la base d'un ETP, nous nous engageons à répondre sans limites de délais,
+                            évolutive. Sur la base d'un ETP, nous nous engageons à répondre sans limite de délais,
                             mais en proportion de l'urgence, aux demandes de correction de bugs et d'évolutions
-                            spécifiques du client.</p>
-                        <p>Le projet s'inscrit dans un processus de migration/monté de version et de développement de
+                            du client.</p>
+                        <p>Le projet s'inscrit dans un processus de migration/montée de version et de développement de
                             la flotte de serveur, afin d'équiper chaque bateau de notre client.</p>
                         <h1>L'équipe projet</h1>
                         <p>Dans un premier temps :</p>
                         <ul>
-                            <li>La MOA chargé des spécifications du besoin et des tests d'intégrations</li>
-                            <li>La MOE chargé de la catégorisation des tickets et de la répartition des tickets et
-                                d'une partie des développements
-                            </li>
-                            <li>Un chef de projet client</li>
-                            <li>Un développeur prestataire (moi)</li>
+                            <li>- La MOA chargé des spécifications du besoin et des tests d'intégrations</li>
+                            <li>- La MOE chargé de la catégorisation des tickets et de la répartition des tickets et
+                                d'une partie des développements</li>
+                            <li>- Un chef de projet client</li>
+                            <li>- Un développeur prestataire (moi)</li>
                         </ul>
                         <p>Dans un second temps :</p>
                         <ul>
-                            <li>Coté client :
-                                <ul>
-                                    <li>La MOA</li>
-                                    <li>Un chef de projet</li>
-                                </ul>
-                            </li>
-                            <li>Coté prestataire :
-                                <ul>
-                                    <li>Un chef de projet technique(moi)</li>
-                                    <li>Une équipe de deux développeurs</li>
-                                </ul>
-                            </li>
+                            Coté client :
+                            <li>- La MOA</li>
+                            <li>- Un chef de projet</li>
+                            </br>
+                            Coté prestataire :
+                            <li>- Un chef de projet technique(moi)</li>
+                            <li>- Une équipe de deux développeurs</li>
                         </ul>
                         <br>
                         <h1>Le projet</h1>
@@ -215,12 +239,12 @@
                             déploiement des développements (interne et externe) en test/intégration et production.</p>
                         <p>Enfin, en tant CP technique, j'ai eu la responsabilité de former et superviser une équipe de
                             deux développeurs juniors (chiffrage, test, livraisons) et de gérer les relations avec notre
-                            client (participation au copil hebdomadaires, suivi de la charge).</p>
+                            client (participation aux copils hebdomadaires, suivi de la charge).</p>
                         <br>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Gestion de projet, Gestion d'équipe, conception de base de données</small>
+                    <small class="text-muted">Compétences : Gestion de projet, Gestion d'équipe, conception de base de données</small>
                 </div>
             </div>
 
@@ -229,12 +253,12 @@
                     Projet Festival
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Gerer un projet culturel de spectacle vivant, en sortant d'études.</h5>
+                    <h5 class="card-title">Gérer un projet culturel de spectacle vivant, en sortant d'études.</h5>
                     <div class="card-text">
                         <h1>Le contexte</h1>
-                        <p>Le projet Festival s'inscrit dans le cadre d'un contrat de service civique comme première
+                        <p>Le projet Festival s'inscrit dans le cadre d'un contrat de service civique comme une première
                             expérience en tant que chargé de projet culturel.</p>
-                        <p>Tous les ans, le CROUS de Bourgogne Franche Comté organise un festival d'arts vivant, le
+                        <p>Tous les ans, le CROUS de Bourgogne Franche Comté organise un festival d'arts vivants, le
                             Festival de la Bouloie.</p>
                         <p>Ce festival d'une durée moyenne d'une semaine s'adresse principalement aux étudiants sous la
                             responsabilité des Crous.</p>
@@ -243,28 +267,27 @@
                             <li>Emilie Camelin, ma tutrice</li>
                             <li>Une personne en charge du traitement administratif</li>
                             <li>Une personne en charge de la communication interne</li>
-                            <li>6 compagnies de spectacle vivants</li>
-                            <li>2 ingénieurs son et lumière + 3 ingénieurs lumières (stagiaires)</li>
+                            <li>6 compagnies de spectacle vivant</li>
+                            <li>2 ingénieurs sons et lumières + 3 ingénieurs lumières (stagiaires)</li>
                             <li>1 photographe</li>
-                            <li>1 équipes de tournages</li>
+                            <li>1 équipe de tournage</li>
                         </ul>
                         <h1>Le projet</h1>
-                        <p>En tant que Chargé de l'organisation et du développement du Festival de la Bouloie mon
-                            objectif était de développé la portée et la diversité de la programmation du festival de la
-                            Bouloie, dans le cadre de la refonte des régions (fusion bourgogne et franche comté) et de
+                        <p>En tant que chargé de l'organisation et du développement du Festival de la Bouloie, mon
+                            objectif était de développer la portée et la diversité de la programmation du festival de la
+                            Bouloie, dans le cadre de la refonte des régions (fusion Bourgogne et Franche-Comté) et de
                             la concurrence d'un festival similaire en Bourgogne.
                             <br>
-                            J'étais chargé de diversifier la
-                            programmation, jusqu'alors centré sur le théâtre et la dance et d'ouvrir l'appel à
-                            candidature sur toute la "grande région".</p>
-                        <p>Dans les actes, j'ai rédigé et promus l'appel à projet pour les artistes, j'ai encadré
-                            les bénévoles, suivi du budget (suivi des dépenses et bilan comptable de l'évènement). Je me
+                            J'étais chargé de diversifier la programmation, jusqu'alors centrée sur le théâtre et la
+                            danse et d'ouvrir l'appel à candidature sur toute la "grande région".</p>
+                        <p>Dans les actes, j'ai rédigé et promu l'appel à projet pour les artistes, j'ai encadré
+                            les bénévoles et suivi le budget (suivi des dépenses et bilan comptable de l'évènement). Je me
                             suis par ailleurs chargé de la mise en place des spectacles (planning, programmation,
                             staffing des équipes techniques), de la diffusion de la campagne de communication (campagne
                             d'affichage, interview radio, etc...). J'ai aussi participé au jury de sélection des
-                            compagnies de spectacle vivant, rédigé l'appel à projet pour le graphiste et conduits
-                            les différents entretient.</p>
-                        <p>Le festival à durée 5 jours, nous avons produit 6 spectacles (dont deux d'art
+                            compagnies de spectacle vivant, rédigé l'appel à projet pour le graphiste et conduit
+                            les différents entretiens.</p>
+                        <p>Le festival a duré 5 jours, nous avons produit 6 spectacles (dont deux d'art
                             circassien) sur une douzaine de candidatures et maintenu la fréquentation du festival.</p>
                     </div>
                 </div>
@@ -276,14 +299,14 @@
 
             <div class="invisible card" id="petroleDetails">
                 <div class="card-header">
-                    Projet Bateau
+                    Projet Pétrole
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Un projet au long cours</h5>
+                    <h5 class="card-title">Un projet d'envergure</h5>
                     <div class="card-text">
                         <h1>Le contexte</h1>
                         <p>Le projet Pétrole est une Tiere Maintenance Applicative (TMA) Corrective-Evolutive sur le
-                            logiciel de GMAO (Gestion et Maintenance Assisté par Ordinateur) Maximo (fourni par
+                            logiciel de GMAO (Gestion et Maintenance Assistées par Ordinateur) Maximo (fourni par
                             IBM).</p>
 
                         <h1>L'équipe projet</h1>
@@ -305,7 +328,7 @@
                             (fonctionnel et développement).</p>
                         <p>A l'heure actuelle, je suis le développeur principal sur ce projet (3/5 du temps). J'effectue
                             aussi bien des développements spécifiques, de la configuration fonctionnelle que de
-                            l'assistance techinque.</p>
+                            l'assistance technique.</p>
                         <p>Par exemple, récemment, j'ai dû développer un module spécifique (conception base +
                             réalisation graphique et développement) afin de permettre de gérer un processus de
                             maintenance, non prévu dans Maximo. A partir des cahiers des charges fonctionnel et
@@ -315,11 +338,11 @@
                             module toujours dans Maximo avec l'outil de Conception d'application. Enfin, j'ai dû mettre
                             au point les différentes méthodes en Java qui permettent à ce nouveau module de fonctionner
                             avec les processus existants. Une fois testé en interne, nous avons livré une premiere
-                            version qui a été commentée par le client. Suite à ses retour, j'ai créé les tickets pour
-                            chaque modifications avant de les réaliser.</p>
+                            version qui a été commentée par le client. Suite à ses retours, j'ai créé les tickets pour
+                            chaque modification avant de les réaliser.</p>
                         <p>Un autre exemple de notre fonction pour ce client fut le suivant. Dans le cadre d'un audit
                             matériel, ils ont du effectuer des manipulations sur l'environnement Maximo et ont fait
-                            appel à nous. Nous les avons assisté en leur fournissant les procédures nécessaires puis en
+                            appel à nous. Nous les avons assistés en leur fournissant les procédures nécessaires puis en
                             les accompagnant en visio lors de leur exécution.</p>
                     </div>
                 </div>
@@ -346,7 +369,7 @@
                             (roadmap et zoning) puis individuellement.</p>
                         <p>Pour la réalisation du site, j'ai travaillé avec un autre élève de ma promotion.</p>
                         <h1>Le projet</h1>
-                        <p>Dans un premier temps, nous avons étudié le site actuel de la base nautique de Meyzieux afin
+                        <p>Dans un premier temps, nous avons étudié le site actuel de la base nautique de Meyzieu afin
                             d'en extraire des contenus et déterminer ce que notre site allait devoir présenter.
                             Nous avons ensuite fait une veille concurrentielle et consulté d'autres sites en rapport
                             avec les activités nautiques. Cette seconde action a pour but de déterminer ce qui existe
@@ -373,7 +396,7 @@
                         <p>Ce projet était intéressant, car il permettait de voir l'ensemble de la genèse d'un site web.
                             De plus, l'énoncé précis permettait d'avoir une autre dimension qu'un projet personnel. En
                             effet, la finalité était bien plus claire : permettre de donner plus de clarté et de
-                            visibilité à la base nautique de Meyzieux, pour ses usagers.</p>
+                            visibilité à la base nautique de Meyzieu, pour ses usagers.</p>
                     </div>
                 </div>
                 <div class="card-footer">
@@ -381,6 +404,7 @@
                         Git.</small>
                 </div>
             </div>
+
             <div class="invisible card" id="chimieDetails">
                 <div class="card-header">
                     Projet Chimie
@@ -393,11 +417,11 @@
                             </br>Nous devions procéder à la migration logicielle et de données d'un Maximo en fin de
                             support
                             vers une version 7.6.1.2 dans laquelle nous devions intégrer le module scheduller (la
-                            premiere installation en Françe).</p>
+                            premiere installation en France).</p>
                         <h1>L'équipe projet</h1>
-                        <p>Coté SQLI, nous étions trois : un chef de projet, un expert technique en support et moi en
+                        <p>Côté SQLI, nous étions trois : un chef de projet, un expert technique en support et moi en
                             tant qu'intégrateur.</br>
-                            Coté client, il y avait le porteur de projet, ainsi que de manière ponctuelle un membre de
+                            Côté client, il y avait le porteur de projet, ainsi que de manière ponctuelle un membre de
                             l'IT.</p>
                         <h1>Le projet</h1>
                         <p>Dans le cadre de la fin de garantie de leur logiciel et de l'augmentation de leur besoin,
@@ -428,49 +452,49 @@
                             production et la mise en place d'une nouvelle infrastructure.</p>
                         <p>Après plusieurs échanges, afin de répondre aux interrogations de notre client, nous avons
                             procédé en janvier à un déplacement sur site afin de procéder à la manipulation. Celle-ci a
-                            eu lieu en 3 temps. Une installation test, qui s'est déroulé sans accroc et a permis
-                            d'affiner le planning d'installation. Une installation-migration en production prévue sur
-                            3 jours. </br>
-                            Suite à des problèmes de droits sur le serveur de base de données, celle-ci a échoué. Au
-                            bout d'un jour et demi de manipulations et d'installation infructueuses, nous avons tout
+                            eu lieu en 3 temps. Une installation test, qui s'est déroulée sans accroc et a permis
+                            d'affiner le planning d'installation, puis une installation-migration en production prévue sur
+                            3 jours. Suite à des problèmes de droits sur le serveur de base de données, celle-ci a échoué. Au
+                            bout d'un jour et demi d'installation et de manipulations infructueuses, nous avons tout
                             stoppé et organisé une réunion qui devait nous permettre d'évaluer nos options et de
                             planifier soit :
                         <ul>
-                            <li>une restauration et une remise en route du système en production</li>
-                            <li>soit trouvé une solution alternative</li>
+                            <li>- une restauration et une remise en route du système en production</li>
+                            <li>- soit trouvé une solution alternative</li>
                         </ul>
                         Nous avons évalué les différents risques et considérant que nous disposions d'une solution de
                         dernier recours, la restauration de l'environnement et le report de la migration, il a été
                         décidé de changer nos plans.</br>
                         Bénéficiant toujours d'une machine aux bonnes configurations matérielles, nous avons opté pour
                         une nouvelle installation dans laquelle nous avons incorporé les données de prod. Dans le même
-                        temps assisté par mon référent, ici le chef de projet qui était chargé de m'encadrer sur site,
-                        nous avons donc procédé a l'installation et la rédaction du compte-rendu d'intervention. Les
+                        temps, assisté par mon référent, ici le chef de projet qui était chargé de m'encadrer sur site,
+                        nous avons donc procédé à l'installation et la rédaction du compte-rendu d'intervention. Les
                         différentes étapes préliminaires (test des procédures en interne, installation test chez le
                         client, échec de la migration) nous ont permis d'avoir une maîtrise plus précise des procédures
                         et du temps. Nous avons réussi à tenir les délais afin de fournir une installation stable et
                         conforme aux attentes de notre client.</p>
-                        <p>Suite à cette installation, le client à procédé aux tests de l'environnement. J'ai corrigé
-                            les quelques erreurs et disfonctionnements et nous avons ainsi pu conclure notre
+                        <p>Suite à cette installation, le client a procédé aux tests de l'environnement. J'ai corrigé
+                            les quelques erreurs et dysfonctionnements et nous avons ainsi pu conclure notre
                             intervention avec la signature du procès-verbal attestant de la réception et l'acceptation
                             de notre installation par le client.</p>
                         <p>La dernière étape de ce projet a été le suivi post intervention. Notre client avait souhaité
-                            installé un module supplémentaire, le scheduller. Nous l'avons ensuite accompagné afin de
-                            résoudre des problèmes de lenteurs. Pour ce faire, en collaboration avec IBM Françe, nous
+                            installer un module supplémentaire, le scheduller. Nous l'avons ensuite accompagné afin de
+                            résoudre des problèmes de lenteurs. Pour se faire, en collaboration avec IBM France, nous
                             avons installé une série de fixs afin de permettre un usage optimal de ce logiciel de
                             planification des tâches.</p>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Compétences : </small>
+                    <small class="text-muted">Compétences : Devellopement, communication</small>
                 </div>
             </div>
+
             <div class="invisible card" id="telephoneDetails">
                 <div class="card-header">
-                    Projet Telephone
+                    Projet Téléphone
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">On n'arrete jamais d'apprendre</h5>
+                    <h5 class="card-title">On n'arrête jamais d'apprendre</h5>
                     <div class="card-text">
                         <h1>Le contexte</h1>
 
@@ -489,7 +513,7 @@
 
                         <h1>Le projet</h1>
 
-                        <p>Un client aillant déjà plusieurs projet chez nous, nous a de nouveau sollicité afin que nous
+                        <p>Un client ayant déjà plusieurs projets chez nous, nous a de nouveau sollicité afin que nous
                             configurions son environnement de telle sorte qu'il puisse gérer les interventions chez des
                             particuliers dans Maximo.</p>
 
@@ -502,19 +526,17 @@
                             que le statut de l'intervention, la présence de pièces jointes, le statut de ces pièces ou
                             encore la personne accédant à l'intervention.</p>
 
-                        <p>Dans le cadre de ce projet, malgré 2 ans d'expériences sur ce logiciel, j'ai de nouveau dû
+                        <p>Dans le cadre de ce projet, malgré 2 ans d'expérience sur ce logiciel, j'ai de nouveau dû
                             prendre mes papiers et mes crayons, afin de suivre une formation sur la création des
                             workflows.</p>
 
                         <p>Mon action sur ce projet se résume en deux étapes. Premièrement, à partir du schéma de
                             relation client, élaborer la trame du workflow. Cette trame doit comporter les différents
                             acteurs, les conditions de passage d'un statut a un autre, les options des boites de
-                            dialogues,...</p>
-
-                        <p>Deuxièmement, à partir de cette trame validée par le chef de projet et/ou la consultante
-                            créer le workflow correspondant dans Maximo grâce à l'outil de Gestion des flux de Tavaux.
-                            Une fois ce flux de travail créé, je devais le test puis vérifier qu'il s'intégrait bien
-                            avec les workflow précédents et suivants.</p>
+                            dialogues ... Deuxièmement, à partir de cette trame validée par le chef de projet et/ou la consultante
+                            j'ai créé le workflow correspondant dans Maximo grâce à l'outil de Gestion des flux de Tavaux.
+                            Une fois modelisé, je devais le tester puis vérifier qu'il s'intégrait bien
+                            avec les workflow environnants.</p>
 
                         <p>Pour des raisons de staffing, mon intervention sur ce projet a été rapide, seulement quelques
                             jours. Cependant, il m'a permis d'aborder des aspects nouveaux de mon travail d'intégrateur
@@ -522,11 +544,13 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Compétences : </small>
+                    <small class="text-muted">Compétences : Apprentissage</small>
                 </div>
             </div>
 
-            <!--<div class="invisible card" id="">
+
+        </div>
+        <!--<div class="invisible card" id="">
                 <div class="card-header">
                     Featured
                 </div>
@@ -537,11 +561,33 @@
                 <div class="card-footer">
                     <small class="text-muted">Compétences : </small>
                 </div>
-            </div>-->
-        </div>
+            </div>
 
-        <!--Boutton de retour à la liste-->
-        <a class="d-grid gap-2 col-6 mx-auto btn btn-success invisible standard" id="goBack" onclick="displayOK()">
-            Retourner à la liste</a>
+        <!--Boutton de retour à la liste
+        <!--<a class="d-grid gap-2 col-6 mx-auto btn btn-success invisible standard" id="goBack" onclick="displayOK()">
+            Retourner à la liste</a>-->
     </div>
 </div>
+<div includes="footer.html"></div>
+
+<script src="./js/script.js" type="text/javascript"></script>
+<script>
+    includeHTML();
+</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    display();
+</script>
+
+</body>
+</html>

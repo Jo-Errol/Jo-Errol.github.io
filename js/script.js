@@ -79,6 +79,10 @@ function sideDish(elem, value) {
 
 }
 
+function titre(elem){
+    document.getElementById("page").innerHTML = elem.toUpperCase();
+}
+
 function displayNOK(elem) {
     let cartes = document.getElementsByClassName("col");
     let newElement = elem + "Details";

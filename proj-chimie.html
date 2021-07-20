@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <!--<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">-->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" rel="stylesheet">
+
+  Set-Cookie: page=accueil.html; SameSite=None;
+
+  <link href="./docs/iconesite.jpg" rel="icon">
+  <title> J. Bonnassieux, Mastère EIL 2021</title>
+</head>
+<body>
+
+<div includes="navbar.html"></div>
+
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <div class="card" id="chimieDetails">
+      <div class="card-header">
+        Projet Chimie
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">La relation client, un élément important du travail. </h5>
+        <div class="card-text">
+          <h1>Le contexte</h1>
+          <p>Il s'agit ici d'un projet dans le cadre professionnel.
+            </br>Nous devions procéder à la migration logicielle et de données d'un Maximo en fin de
+            support
+            vers une version 7.6.1.2 dans laquelle nous devions intégrer le module scheduller (la
+            premiere installation en France).</p>
+          <h1>L'équipe projet</h1>
+          <p>Côté SQLI, nous étions trois : un chef de projet, un expert technique en support et moi en
+            tant qu'intégrateur.</br>
+            Côté client, il y avait le porteur de projet, ainsi que de manière ponctuelle un membre de
+            l'IT.</p>
+          <h1>Le projet</h1>
+          <p>Dans le cadre de la fin de garantie de leur logiciel et de l'augmentation de leur besoin,
+            l'entreprise Chimie a fait appel à nous afin de conduire l'installation d'une nouvelle
+            version de Maximo, le transfert des données et l'installation d'un module complémentaire
+            (scheduller).</p>
+          <p>J'ai été positionné sur ce projet en tant qu'intégrateur sous la tutelle d'un expert
+            technique. Sous sa direction, je devais procéder à plusieurs séries d'installations.</p>
+          <p>J'ai commencé par me procurer la documentation technique relative à l'installation d'un
+            Maximo Asset Management 7.6.1.2 et d'un Scheduller, tandis que le client nous fournissait un
+            Dump de sa base de données en Oracle. Une fois les besoins matériels déterminés, j'ai fait
+            une demande à notre IT, afin d'obtenir la machine virtuelle. Dans le cours laps de temps
+            nécessaire à la création de l'environnement, je me suis procuré les logiciels
+            d'installation,
+            auprès d'IBM et d'Oracle, des versions sources et cibles.</p>
+          <p>À la réception de la VM, j'ai transféré les logiciels d'installation et le dump client puis
+            procédé à un snapshot de l'environnement vide. En effet, Maximo nécessite un environnement
+            parfaitement vierge pour être installé ; en cas de désinstallation, il est courant qu'une
+            nouvelle installation rencontre des problèmes. </br>
+            Une fois cette étape préliminaire réalisée, en me basant sur la procédure d'installation
+            officielle, j'ai effectué une installation Maximo iso prod. J'ai ensuite réalisé une
+            nouvelle sauvegarde de l'environnement. À partir des comptes-rendus d'intervention déjà
+            réalisés par mon entreprise et avec l'assistance ponctuelle de l'expert technique, j'ai
+            opéré la migration logicielle et de données. À partir de cette étape, j'ai consigné mes
+            manipulations afin de rédiger une procédure. Après validation par mon référent technique,
+            nous avons soumis la procédure à notre client. Cela a permis au client de valider la
+            procédure et de la planifier. En effet, elle nécessitait un arrêt logiciel sur le site de
+            production et la mise en place d'une nouvelle infrastructure.</p>
+          <p>Après plusieurs échanges, afin de répondre aux interrogations de notre client, nous avons
+            procédé en janvier à un déplacement sur site afin de procéder à la manipulation. Celle-ci a
+            eu lieu en 3 temps. Une installation test, qui s'est déroulée sans accroc et a permis
+            d'affiner le planning d'installation, puis une installation-migration en production prévue sur
+            3 jours. Suite à des problèmes de droits sur le serveur de base de données, celle-ci a échoué. Au
+            bout d'un jour et demi d'installation et de manipulations infructueuses, nous avons tout
+            stoppé et organisé une réunion qui devait nous permettre d'évaluer nos options et de
+            planifier soit :
+          <ul>
+            <li>- une restauration et une remise en route du système en production</li>
+            <li>- soit trouvé une solution alternative</li>
+          </ul>
+          Nous avons évalué les différents risques et considérant que nous disposions d'une solution de
+          dernier recours, la restauration de l'environnement et le report de la migration, il a été
+          décidé de changer nos plans.</br>
+          Bénéficiant toujours d'une machine aux bonnes configurations matérielles, nous avons opté pour
+          une nouvelle installation dans laquelle nous avons incorporé les données de prod. Dans le même
+          temps, assisté par mon référent, ici le chef de projet qui était chargé de m'encadrer sur site,
+          nous avons donc procédé à l'installation et la rédaction du compte-rendu d'intervention. Les
+          différentes étapes préliminaires (test des procédures en interne, installation test chez le
+          client, échec de la migration) nous ont permis d'avoir une maîtrise plus précise des procédures
+          et du temps. Nous avons réussi à tenir les délais afin de fournir une installation stable et
+          conforme aux attentes de notre client.</p>
+          <p>Suite à cette installation, le client a procédé aux tests de l'environnement. J'ai corrigé
+            les quelques erreurs et dysfonctionnements et nous avons ainsi pu conclure notre
+            intervention avec la signature du procès-verbal attestant de la réception et l'acceptation
+            de notre installation par le client.</p>
+          <p>La dernière étape de ce projet a été le suivi post intervention. Notre client avait souhaité
+            installer un module supplémentaire, le scheduller. Nous l'avons ensuite accompagné afin de
+            résoudre des problèmes de lenteurs. Pour se faire, en collaboration avec IBM France, nous
+            avons installé une série de fixs afin de permettre un usage optimal de ce logiciel de
+            planification des tâches.</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Compétences : Devellopement, communication</small>
+      </div>
+    </div>
+
+    <!--Boutton de retour à la liste-->
+    <a class="d-grid gap-2 col-6 mx-auto btn btn-success standard" id="goBack" href="projets.html">Retourner à la liste</a>
+  </div>
+</div>
+
+<div includes="footer.html"></div>
+
+<script src="./js/script.js" type="text/javascript"></script>
+<script>
+  includeHTML();
+</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  display();
+</script>
+
+</body>
+</html>
